@@ -1,4 +1,4 @@
 # NodeJS-Boilerplate
 My NodeJS development Boilerplate
 
-[ ] Insert the package name!
+- [ ] Insert the package name!
