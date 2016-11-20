@@ -1,2 +1,4 @@
 # NodeJS-Boilerplate
-My NodeJS Development Boilerplate
+My NodeJS development Boilerplate
+
+[ ] Insert the package name!
