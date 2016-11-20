@@ -28,7 +28,7 @@ $RECYCLE.BIN/
 .vscode/
 tsconfig.json
 jsconfig.json
-
+.eslintrc.json
 
 ### Node ###
 # Logs
