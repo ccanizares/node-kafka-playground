@@ -1,4 +1,5 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 var exphbs = require('express-handlebars');
 var hbs = exphbs.create({
@@ -10,6 +11,12 @@ var hbs = exphbs.create({
     },
   }
 });
+
+// parse application/x-www-form-urlencoded (extended is true for nested-object-requests) 
+app.use(bodyParser.urlencoded({ extended: true }));
+ 
+// parse application/json 
+app.use(bodyParser.json());
 
 // Register `hbs.engine` with the Express app. 
 app.engine('handlebars', hbs.engine);
