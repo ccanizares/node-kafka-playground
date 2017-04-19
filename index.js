@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Register `hbs.engine` with the Express app. 
-app.engine('handlebars', hbs.engine);
+app.engine('hbs', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
