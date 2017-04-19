@@ -4,6 +4,7 @@ var app = express();
 var exphbs = require('express-handlebars');
 var hbs = exphbs.create({
   defaultLayout: "main",
+  extname: '.hbs',
   // Specify helpers which are only registered on this instance. 
   helpers: {
     globalHelper: function () {
@@ -20,7 +21,7 @@ app.use(bodyParser.json());
 
 // Register `hbs.engine` with the Express app. 
 app.engine('hbs', hbs.engine);
-app.set('view engine', 'handlebars');
+app.set('view engine', 'hbs');
 
 app.use(express.static('public'));
 
