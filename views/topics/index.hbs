@@ -1,0 +1,15 @@
+<h1>Topics List</h1>
+<button><a href='/'>Back</a></button>
+<br /><br />
+{{#each results}}
+  {{this.0.topic}} => 
+  <button>
+    <a href="/produce/{{this.0.topic}}">Produce</a>
+  </button>
+  <button>
+    <a href="/subscribe/{{this.0.topic}}">Subscribe</a>
+  </button>
+  <br />
+{{/each}}
+
+

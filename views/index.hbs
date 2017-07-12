@@ -1,9 +1,6 @@
-<h1>App Boilerplate</h1>
-{{> deeper/image}}
-<br>
-<p>{{globalHelper}}</p>
-<p>{{localHelper}}</p>
-<p>{{attribute}}</p>
-<br> 
-{{> button}}
-<br>
+<h1>Node Kafka Test</h1>
+<p>Set your kafka connection string (by default if you do not enter anything will point to localhost:2180). 
+  Then press topics to see the list of avaible topics in your kafka cluster</p>
+<input type='text' data-bind={{connectionString}}/>
+<button><a href='/topics?connectionString={{connectionString}}'>Topics</a></button>
+
