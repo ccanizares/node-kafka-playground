@@ -1,8 +1,8 @@
 # Kafka node pocs
 
-Simple poc for playing with kafka events from a javascript node application. 
+Simple poc for playing with kafka events from a javascript node application.
 
-### Implemented pocs
+### Implemented pocs
 
 1 - Getting a list of topics avaible in a cluster.
 
